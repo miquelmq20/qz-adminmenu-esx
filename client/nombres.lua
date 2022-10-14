@@ -75,14 +75,14 @@ AddEventHandler('miquel-showid:client:add-id', function(identifier, playerSource
     end
 end)
 
-RegisterCommand('sexo', function()
-    if not forceDraw then
-        forceDraw = true
-    elseif forceDraw then
-        forceDraw = false
-        cleanUpGamerTags()
-    end
-end)
+-- RegisterCommand('test', function()
+--     if not forceDraw then
+--         forceDraw = true
+--     elseif forceDraw then
+--         forceDraw = false
+--         cleanUpGamerTags()
+--     end
+-- end)
 
 function Draw3DText(x, y, z, text, newScale)
     local onScreen, _x, _y = World3dToScreen2d(x, y, z)
